@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);  
+}
+body {
+    background-color:var(--OffBlack)
+}
+.maincontainer{
+    background-color:var(--Grey)
+}
