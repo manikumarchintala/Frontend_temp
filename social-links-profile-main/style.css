@@ -14,5 +14,54 @@ body {
     background-color:var(--OffBlack)
 }
 .maincontainer{
-    background-color:var(--Grey)
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:var(--Grey);
+    height: 35%;
+    width: 23%;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem 35rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+ .imag{
+    background-image: url("./assets/images/ShikamaruKishimoto.jpg");
+    height: 5rem;
+    width: 5rem;
+    border-radius: 8rem;
+    padding: 2rem;
+    margin: 2.5rem;
+}
+.maincontainer h2{
+    color: var(--White);
+    padding-bottom: 1rem;
+}
+.maincontainer h4{
+    color: hsl(75, 94%, 57%);
+}
+.maincontainer p{
+    color:var(--White);
+    margin: 2rem 1rem;
+}
+.maincontainer button{
+    color: var(--White);
+    background-color: var(--DarkGrey);
+    height: 2.5rem;
+    width: 15rem;
+    margin: 0.3rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.maincontainer button:nth-child(4n){
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width:1024px) {
+    .maincontainer{
+        width: 70%;
+        margin: 3rem 1.5rem;
+    }
 }
