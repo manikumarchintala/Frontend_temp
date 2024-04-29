@@ -1,0 +1,89 @@
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+    --Weights: 500, 800
+     }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--Family);
+}
+body{
+ background-color: var(--Yellow);
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    width: 25rem;
+    height: auto;
+    margin: 10rem 32rem ;
+    border-radius: 2rem;
+    border:0.1rem solid black;
+    box-shadow: 10px 10px 0px  var(--Black);
+}
+.cover{
+    background-image: url(./assets/images/illustration-article.svg);
+    background-repeat: no-repeat;
+    height: 10.5rem;
+    width: 17rem;
+    padding: 1rem 2rem;
+    overflow: none;
+    margin: 1rem 2rem;
+    border-radius: 2rem ;
+}
+.hear p{ 
+    display: inline-block;
+    color: var(--Black);
+    background-color: var(--Yellow);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font-weight: 700;
+}
+.maincontainer h6{
+    font-size: medium;
+    padding-left: 1rem;
+}
+.maincontainer h2{
+    padding: 1rem;
+}
+.maincontainer img{
+    height: 2rem;
+    padding: 1rem;
+}
+.textbox{
+    text-align:left;
+    padding: 1rem;
+    font-weight: 300;
+    color: var(--Grey);
+    line-height: 1.5rem;
+   word-spacing: 0.3rem;
+}
+.maincontainer .profile{
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+@media  only screen and (max-width:1024px) {
+    .maincontainer{
+        margin: 0;
+        width: 80%;
+        height: auto;
+        position:fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .cover{
+        overflow: none;
+        margin: 1rem;
+        width: 70%;
+    }
+}
