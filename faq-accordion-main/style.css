@@ -36,7 +36,7 @@ body{
     padding: 1rem 0rem;
     margin: 1rem 0rem;
 }
-.headercontent{
+.HeaderContent{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,7 +44,7 @@ body{
     padding: 1rem 0rem ;
 
 }
-.headercontent img{
+.HeaderContent img{
     padding: 0rem 0.5rem ;
     cursor: pointer;
 }
@@ -52,10 +52,10 @@ body{
     display: inline-block;
     margin-left: 1rem;
 }
-p{
+.riddle {
     padding: 1rem;
     color: var(--Darkpurple);
-    display: none;
+    display: block;
 }
  .maincontiner hr{
     color: var(--Grayishpurple);
