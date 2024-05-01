@@ -16,3 +16,116 @@
    --Lightlavender: hsl(241, 100%, 89%);
    --Darkgrayblue: hsl(224, 30%, 27%);
 }
+body{
+    background-color: var(--Persianblue);
+}
+.maincontainer{
+ display: flex;
+ flex-direction: row;   
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.container1{
+    background-color: var(--Cobaltblue);
+    height: 25rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 3rem;
+}
+.container1 h3,.container1 h1,h2{
+    color: var(--White);
+}
+.container1 h3{
+    margin: 1rem;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    height: 25rem;
+    width: 20rem;
+    border-radius:0rem 3rem 3rem 0rem;
+    border: 1px solid black;
+    justify-content: center;
+    align-content: center;
+}
+.container2 button{
+    background-color: var(--Darkgrayblue);
+    color: var(--White);
+    padding: 0.8rem 1rem; 
+    border-radius: 2rem; 
+    width: 14rem;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+}  
+.container2 h3{
+    padding: 1rem;
+    margin:1rem;
+}
+span{
+    color: var(--White);
+    text-align: center;
+}
+.circle{
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--Darkgrayblue);
+    position:relative;
+    border-radius: 5rem;
+    text-align: center;
+    margin: 1rem 5rem;
+}
+.circle h1{
+    margin: 1.5rem;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.reaction{
+    color: var(--Lightred);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%,0.2);
+    width: 10rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+.memory{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Orangeyyellow);
+    background-color: hsla(39, 100%, 56%,0.2) ;
+    width: 10rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+.verbal{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Greenteal);
+    background-color: hsla(166, 100%, 37%,0.2);
+    width: 10rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+.visual{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Lightroyalblue);
+    background-color: hsla(252, 100%, 67%,0.2);
+    width: 10rem;
+    margin-left: 2.5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
