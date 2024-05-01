@@ -153,10 +153,15 @@ span{
     .reaction,.memory,.verbal, .visual{
       width: auto;
       margin-left: 3rem;
+      margin-right: 3rem;
     }
     .container2 button{
         width:auto;
         margin-left: 3rem;
         margin-bottom: 1rem;
+        margin-right: 3rem;
+    }
+    .circle{
+        width: auto;
     }
 }
