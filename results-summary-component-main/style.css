@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -18,6 +19,7 @@
 }
 body{
     background-color: var(--Persianblue);
+    font-family: "Hanken Grotesk";
 }
 .maincontainer{
  display: flex;
@@ -28,13 +30,13 @@ body{
  transform: translate(-50%,-50%);
 }
 .container1{
-    background-color: var(--Cobaltblue);
+    background-image:linear-gradient(to bottom,var(--Lightslateblue),var(--Lightroyalblue));
     height: 25rem;
     width: 20rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-radius: 3rem;
+    border-radius: 2rem;
 }
 .container1 h3,.container1 h1,h2{
     color: var(--White);
@@ -49,9 +51,9 @@ body{
     height: 25rem;
     width: 20rem;
     border-radius:0rem 3rem 3rem 0rem;
-    border: 1px solid black;
     justify-content: center;
     align-content: center;
+    box-shadow: 0.3rem 0.3rem 1rem 0.2rem hsla(224, 30%, 27%,0.2);
 }
 .container2 button{
     background-color: var(--Darkgrayblue);
@@ -60,11 +62,11 @@ body{
     border-radius: 2rem; 
     width: 14rem;
     margin-left: 2.5rem;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
 }  
 .container2 h3{
-    padding: 1rem;
-    margin:1rem;
+    padding: 0.5rem;
+    margin:0.5rem;
 }
 span{
     color: var(--White);
@@ -73,7 +75,7 @@ span{
 .circle{
     height: 10rem;
     width: 10rem;
-    background-color: var(--Darkgrayblue);
+    background-image: linear-gradient(to bottom,var(--Violetblue),var(--Persianblue) );
     position:relative;
     border-radius: 5rem;
     text-align: center;
@@ -118,7 +120,7 @@ span{
     border-radius: 1rem;
     margin-bottom: 0.5rem;
 }
-.visual{
+.visual {
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -128,4 +130,33 @@ span{
     margin-left: 2.5rem;
     border-radius: 1rem;
     margin-bottom: 0.5rem;
+}
+@media only screen and (max-width:750px) {
+    .maincontainer{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .container1{
+        height: auto;
+        width: 100%;
+        overflow: none;
+    }
+    .container2{
+        height: auto;
+        width: 100%;
+        border-radius: 0rem;
+        overflow: none;
+    }
+    .reaction,.memory,.verbal, .visual{
+      width: auto;
+      margin-left: 3rem;
+    }
+    .container2 button{
+        width:auto;
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+    }
 }
