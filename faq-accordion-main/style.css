@@ -13,6 +13,9 @@ body{
     background-color: var(--Lightpink);
     position: relative;
     background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
 }
 .maincontiner{
     position: fixed;
@@ -42,6 +45,8 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0rem ;
+    border-bottom: 2px solid rgb(210, 207, 207);
+    margin-bottom: 1rem;
 
 }
 .HeaderContent img{
@@ -55,8 +60,18 @@ body{
 .riddle {
     padding: 1rem;
     color: var(--Darkpurple);
+  display: none;
+  transition: 0.5s;
+}
+ .accord.active .riddle{
     display: block;
+    transition: 0.5s;
 }
  .maincontiner hr{
     color: var(--Grayishpurple);
+}
+@media only screen and(max-width:700px){
+    .maincontiner{
+        width: 140%;
+    }
 }
