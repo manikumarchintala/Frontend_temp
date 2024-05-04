@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", total);
 const Data = [
   {
     category: "Reaction",
@@ -20,3 +21,16 @@ const Data = [
     icon: "./assets/images/icon-visual.svg",
   },
 ];
+function total() {
+  let final = 0;
+  let len = Data.length;
+  for (let i = 0; i < len; i++) {
+    final = Data[i].score + final;
+    document.getElementsByClassName("`${Data[i].category}`").innerText =
+      Data[i].category;
+    console.log(Data[i].category);
+  }
+
+  var out = Math.floor(final / len);
+  document.getElementById("mark").innerText = out;
+}
