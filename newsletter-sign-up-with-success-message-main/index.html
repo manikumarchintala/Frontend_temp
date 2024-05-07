@@ -16,12 +16,12 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js"></script>
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
 
   <body>
-    <div class="container">
+    <div id="container" class="container">
       <div class="left">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -39,14 +39,12 @@
         <div class="msg">
           <h5>Email address</h5>
           <div class="p">
-            <span>valid email required</span>
+            <span id="errer" class="errer"></span>
           </div>
         </div>
 
-        <form name="form1">
-          <input id="user" type="email" placeholder="email@company.com" />
-          <button id="bon">Subscribe to monthly newsletter</button>
-        </form>
+        <input id="user" type="email" placeholder="email@company.com" />
+        <button id="bon">Subscribe to monthly newsletter</button>
       </div>
       <div class="right">
         <img
@@ -55,14 +53,15 @@
         />
       </div>
     </div>
-    <div class="container2">
+    <div id="container2" class="container2">
       <img src="./assets/images/icon-success.svg" alt="tick" />
       <h1>Thanks for subscribing!</h1>
-      <p>
-        A confirmation email has been sent to ash@loremcompany.com. Please open
+      <p id="answer">
+        A confirmation email has been sent to <samp id="msg"></samp> Please open
         it and click the button inside to confirm your subscription.
       </p>
-      <button>Dismiss message</button>
+      <button id="diss">Dismiss message</button>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -130,6 +130,7 @@ padding: 1rem 1rem;
     color: var(--White);
     background-color: var(--DarkSlateGrey);
     border-radius: 1rem;
+    cursor: pointer;
 }
 .container2 p{
     font-size: 0.9rem;
