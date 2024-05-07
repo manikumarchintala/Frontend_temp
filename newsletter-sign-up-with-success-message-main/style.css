@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto",sans-serif;
+}
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--DarkSlateGrey);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* front */
+  
+.container{
+    display: none;
+    flex-direction: row;
+    background-color: var(--White);
+    width: 48%;
+    height: auto;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+width: 55%;
+height: 45%;
+padding: 0rem 1.5rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.left h1{
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+.left p{
+    font-size: 1rem;
+    font-weight: 300;
+  font-weight: 300;
+}
+.right{
+width: 45%;
+height: 45%;
+object-fit: fill;
+padding: 1rem 1rem; 
+}
+.right img{
+    width: 95%;
+    object-fit:fill
+}
+.left input{
+    width: 100%;
+    height: 3rem;
+    margin: 0.4rem 0rem;
+    border-radius: 1rem;
+    border: 1px solid var(--CharcoalGrey);
+}
+.left button{
+    width: 100%;
+    height: 3rem;
+    margin: 0.4rem 0rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border-style: none;
+    color:var(--White);
+    background-color: var(--DarkSlateGrey);
+}
+.left h5{
+    margin: 1rem 0.2rem;
+}
+
+/*Back*/
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: var(--White);
+    height: auto;
+    padding: 2.5rem;
+    border-radius: 2rem;
+}
+.container2 img{
+    width: 15%;
+    padding-bottom: 1.5rem;
+}
+.container2 h1{
+    padding-bottom: 1rem;
+}
+.container2 button{
+    width: 95%;
+    height: 2.5rem;
+    color: var(--White);
+    background-color: var(--DarkSlateGrey);
+    border-radius: 1rem;
+}
+.container2 p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-bottom:1rem ;
+}
