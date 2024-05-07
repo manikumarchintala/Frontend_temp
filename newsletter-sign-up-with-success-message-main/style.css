@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400display=swap'); */
 * {
   margin: 0px;
   padding: 0px;
@@ -24,7 +24,7 @@ body{
 /* front */
   
 .container{
-    display: none;
+    display: flex;
     flex-direction: row;
     background-color: var(--White);
     width: 48%;
@@ -46,10 +46,14 @@ justify-content: space-between;
     margin-bottom: 1rem;
     font-weight: 900;
 }
-.left p{
+.left p {
     font-size: 1rem;
     font-weight: 300;
   font-weight: 300;
+  word-spacing: 0.05rem;
+}
+.left  img{
+    margin-right:0.5rem ;
 }
 .right{
 width: 45%;
@@ -67,6 +71,7 @@ padding: 1rem 1rem;
     margin: 0.4rem 0rem;
     border-radius: 1rem;
     border: 1px solid var(--CharcoalGrey);
+    padding: 1rem;
 }
 .left button{
     width: 100%;
@@ -77,15 +82,34 @@ padding: 1rem 1rem;
     border-style: none;
     color:var(--White);
     background-color: var(--DarkSlateGrey);
+    cursor: pointer;
 }
 .left h5{
-    margin: 1rem 0.2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.msg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.p{
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+.msg .p span{
+    margin-top: 3 rem;
+    font-size:0.7rem;
+   text-align: center;
+   color: var(--Tomato);
 }
 
 /*Back*/
 
 .container2{
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 25%;
     background-color: var(--White);
