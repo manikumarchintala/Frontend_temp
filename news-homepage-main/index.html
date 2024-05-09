@@ -15,79 +15,99 @@
     <title>Frontend Mentor | News homepage</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js"></script>
   </head>
   <body>
-    <nav>
-      <div>
-        <img src="./assets/images/logo.svg" alt="logo" />
-        <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
-        </ul>
-      </div>
-    </nav>
-    <div class="main-grid">
-      <div class="box-1">
-        <img src="./assets/images/image-web-3-desktop.jpg" alt="mainpic" />
-        <h1>The Bright Future of Web 3.0?</h1>
-
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-
-        <button>Read more</button>
-      </div>
-      <div class="box-2">
-        <h1>New</h1>
-        <h3>Hydrogen VS Electric Cars</h3>
-        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        <h3>The Downsides of AI Artistry</h3>
-        <p>
-          What are the possible adverse effects of on-demand AI image
-          generation?
-        </p>
-        <h3>Is VC Funding Drying Up?</h3>
-        <p>
-          Private funding by VC firms is down 50% YOY. We take a look at what
-          that means.
-        </p>
-      </div>
-      <div class="box-3">
-        <div class="01">
+    <div class="container">
+      <nav>
+        <div class="header">
+          <img src="./assets/images/logo.svg" alt="logo" />
+          <div class="lin">
+            <ul>
+              <li>Home</li>
+              <li>New</li>
+              <li>Popular</li>
+              <li>Trending</li>
+              <li>Categories</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main-grid">
+        <div class="box-1">
+          <img
+            class="mai"
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="mainpic"
+          />
+          <div class="sub-box-1">
+            <h1>
+              The Bright <br />
+              Future of <br />
+              web 3.0?
+            </h1>
+            <div class="sub-sub-box-1">
+              <p>
+                We dive into the next evolution of the web that <br />
+                claims to put the power of the platforms back <br />
+                into the hands of the people. But is it really <br />
+                fulfilling its promise?
+              </p>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <h1>New</h1>
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>
+            Will hydrogen-fueled cars ever catch up <br />
+            to EVs?
+          </p>
+          <h3>The Downsides of AI Artistry</h3>
+          <p>
+            What are the possible adverse effects of <br />
+            on-demand AI image generation?
+          </p>
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>
+            Private funding by VC firms is down 50% <br />
+            YOY. We take a look at what that means.
+          </p>
+        </div>
+        <div class="box-3">
           <img src="./assets/images/image-retro-pcs.jpg" alt="toplaptops" />
-          <h1>01</h1>
-          <h4>Reviving Retro PCs</h4>
-          <p>What happens when old PCs are given modern upgrades?</p>
+          <div class="sub-3">
+            <h1>01</h1>
+            <h4>Reviving Retro PCs</h4>
+            <p>
+              What happens when old PCs <br />
+              are given modern upgrades?
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="box-4">
-        <div class="02">
+        <div class="box-4">
           <img src="./assets/images/image-top-laptops.jpg" alt="retro" />
-          <h1>02</h1>
-          <h4>Top 10 Laptops of 2022</h4>
-          <p>Our best picks for various needs and budgets.</p>
+          <div class="sub-4">
+            <h1>02</h1>
+            <h4>Top 10 Laptops of 2022</h4>
+            <p>
+              Our best picks for various <br />
+              needs and budgets.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="box-5">
-        <div class="03">
+        <div class="box-5">
           <img src="./assets/images/image-gaming-growth.jpg" alt="growth" />
-          <h1>03</h1>
-          <h4>The Growth of Gaming</h4>
-          <p>How the pandemic has sparked fresh opportunities.</p>
+          <div class="sub-5">
+            <h1>03</h1>
+            <h4>The Growth of Gaming</h4>
+            <p>
+              How the pandemic has sparked <br />
+              fresh opportunities.
+            </p>
+          </div>
         </div>
       </div>
     </div>

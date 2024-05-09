@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*,
+*::after,
+*::before {
+ box-sizing: border-box;
+ margin: 0;
+
+}
+:root {
+  --Softorange: hsl(35, 77%, 62%);
+  --Softred: hsl(5, 85%, 63%);
+
+  --Offwhite: hsl(36, 100%, 99%);
+  --Grayishblue: hsl(233, 8%, 79%);
+  --Darkgrayishblue: hsl(236, 13%, 42%);
+  --Verydarkblue: hsl(240, 100%, 5%);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Offwhite);
+    font-family: "Inter", sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+p{
+    color: var(--Darkgrayishblue);
+    font-size: 13px;
+}
+.container{
+    width: 80%;
+    height: 90%;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.lin ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.main-grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+    "one one two"
+    "three four five";
+}
+
+.box-1{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    grid-area: one;
+}
+.box-1 img{
+    width: 100%;
+    height: 80%;
+}
+.box-1 h1{
+    margin-top:1rem ;
+    margin-right: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.sub-box-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.sub-sub-box-1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.sub-sub-box-1 button{
+background-color: var(--Softred);
+color: var(--Offwhite);
+width: 7.5rem;
+height: 2.5rem;
+margin-top: 0.5rem;
+border-style: none;
+cursor: pointer;
+}
+.box-2{
+    width: 100%;
+    height: 100%;
+    color: var(--Offwhite);
+    background-color: var(--Verydarkblue);
+    grid-area: two;
+    padding-left: 1rem;
+}
+.box-2 h1{
+    padding: 1rem;
+    color: var(--Softorange);
+}
+.box-2 h3{
+    padding: 1rem;
+}
+.box-2 p{
+    color: var(--Offwhite);
+}
+.box-3{
+    width: 100%;
+    display: flex;
+    grid-area: three;
+}
+.box-4{
+    width: 100%;
+    display: flex;
+    grid-area: four;
+}
+.box-5{
+    width: 100%;
+    display: flex;
+    grid-area: five;
+}
+.box-3 img , .box-4 img ,.box-5 img{
+    height: 100%;
+    width: 25%;
+}
+.box-3 h1 , .box-4 h1 ,.box-5 h1{
+  color: var(--Grayishblue);
+  margin-left: 1rem;
+}
+.box-3 h4 , .box-4 h4 ,.box-5 h4{
+    color: black;
+    margin-left: 1rem;
+  }
+  .box-3 p , .box-4 p ,.box-5 p{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
