@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+--LightGreen: hsl(148, 38%, 91%);
+--Green: hsl(169, 82%, 27%);
+--Red: hsl(0, 66%, 56%);
+--White: hsl(0, 0%, 100%);
+--MediumGrey: hsl(186, 15%, 59%);
+--DarkGrey: hsl(187, 24%, 22%);
+}
+body{
+font-family: "Karla", sans-serif;
+background-color: var(--LightGreen);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+}
+.container{
+    width: 50%;
+    height: 70%;
+    background-color: var(--White);
+   
+    border-radius: 1rem;
+}
+.box{
+   display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+h1{
+    padding: 1rem 2rem;
+}
+.box-1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.containerback{
+    display: none;
+}
+.queries{
+    width: 90%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 1rem;
+}
+.type2{
+    border: 1px solid black;
+    padding:0.5rem 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction:row;
+    border-radius: 0.4rem;
+    gap: 1rem;
+}
+input[type="text"]{
+    width: 50%;
+    height: 2rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid black;
+}
+input[type="email"]{
+    width: 90%;
+    height: 2rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid black;
+}
+
+textarea{
+    resize: none;
+    width: 90%;
+    height: 8rem;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+}
+button{
+    width: 90%;
+    height: 2.5rem;
+    color: var(--White);
+    background-color: var(--Green);
+    border-radius: 0.4rem;
+}
