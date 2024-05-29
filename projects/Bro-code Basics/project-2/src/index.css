@@ -1,0 +1,29 @@
+.card img{
+height: 150px;
+width: 150px;
+}
+.card{
+  border: 1px solid hsl(0,0%,80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%,0.1);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+}
+.card .Cardimage{
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.card .CardTittle{
+font-family: 'Courier New', Courier, monospace;
+margin: 10%;
+color: rgb(0, 0, 20%);
+}
+.card .CardDescreption{
+  font-family: 'Courier New', Courier, monospace;
+  color: hsl(0,0%,20%);
+}

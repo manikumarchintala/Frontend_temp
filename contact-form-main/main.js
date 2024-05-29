@@ -1,14 +1,12 @@
-document.addEventListener("DOMContentLoaded", main);
-function main() {
-  let submit = document.getElementById("sub");
-  let fNam = document.getElementById("fnam");
-  console.log(fNam);
-  submit.addEventListener("click", function () {
-    console.log(fNam);
+let submit = document.getElementById("sub");
+document
+  .getElementById("ContactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let fNam = document.getElementById("fnam");
+    let P1 = document.getElementById("p1");
     if (fNam.value === "") {
-      console.log("hi there");
-    } else {
-      console.log("hi");
+      P1.innerText = "This field is required";
     }
   });
-}
