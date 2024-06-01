@@ -1,1 +1,46 @@
 @import url("./base.css");
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text image";
+    padding:0 60px;
+}
+.main--text{
+    grid-area: text;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+}
+.main--image{
+    grid-area: image;
+}
+.fon{
+    font-family: var(--font-family-index);
+}
+.MySkills{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 0 60px;
+}
+.MySkills--grid{
+    display: grid;
+   
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    padding-bottom: 20px;
+}
+.MySkills--container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--primary-color-text);
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}

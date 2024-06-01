@@ -1,0 +1,69 @@
+:root{
+    --primary-color-text:#000000;
+    --secondary-color-bg:#F4F4F5;
+    --font-family: "Poetsen One", sans-serif;
+    --font-family-index: "Bungee Shade", sans-serif;
+}
+body{
+    background-color: var(--secondary-color-bg);
+    color: var(--primary-color-text);
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ .text p{
+    margin: 0;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr 150px;
+    grid-template-areas: "logo name nav button";
+    align-items: center;
+    padding: 0 60px;
+}
+.nav__list{
+    list-style: none;
+    display:flex ;
+}
+.header__link{
+    font-size: 35px;
+    font-weight: bold;
+    grid-area: name;
+}
+.nav{
+    display: inline-block;
+    justify-self: start;
+}
+.nav__list-item{
+    margin-inline-end: 36px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button{
+    grid-area: button;
+    margin-inline-end: 20px;
+    background-color: var(--primary-color-text);
+    color: var(--secondary-color-bg);
+    padding-bottom: 3px;
+    font-size: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 5px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 50px 1fr ;
+    grid-template-areas: "logo name p p";
+    align-items: center;
+    padding: 0 60px;
+    background-color: var(--primary-color-text);
+    color: var(--secondary-color-bg);   
+}
