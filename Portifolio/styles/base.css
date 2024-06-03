@@ -3,6 +3,7 @@
     --secondary-color-bg:#F4F4F5;
     --font-family: "Poetsen One", sans-serif;
     --font-family-index: "Bungee Shade", sans-serif;
+    --Nutral:#404040;
 }
 body{
     background-color: var(--secondary-color-bg);
@@ -15,6 +16,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+ p,h2{
+    margin: 0;
+    padding: 0;
+ }
  .text p{
     margin: 0;
     font-weight: 200;

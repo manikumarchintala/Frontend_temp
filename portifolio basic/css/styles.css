@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+/* either it can be imported here or can be added to html as a link or can be exported through embeded code but it may increase the size of the file */
 :root {
     --black: #171321;
     --dkblue: #0d314b;
@@ -11,15 +12,19 @@
     --mono: "Oxygen mono", monospace;
     --sans: Oxygen, sans-serif;
 }
+ /* the root elements make the properties so the change in  properties can make the whole propoerties to change */
 /* border box model: https://css-tricks.com/box-sizing/ */
 html {
     box-sizing: border-box;
 }
+/* border box makes the box same size the padding and everything that grows inside so that the size will be constant so that we can expect the size similar to the design file */
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
+/* suedo elements ::before and ::after  make the inserted elements the boxes as a border-box when inserting */
+/* inherit makes all tge properties in the before and after pages to inherit those properties */
 body{
     margin: 0;
     padding: 0;
@@ -27,9 +32,11 @@ body{
     background-color:var(--black) ;
     color: var(--white);
 }
+/* margin and paddding by default are not zero so we get the weird spacing so to remove it we make these two properties */
 h1,h2,h3{
     margin: 0;
 }
+/* there is a default margin to each element so this is removed */
 a{
     color: var(--magenta);
 }
@@ -40,6 +47,9 @@ a:hover{
 img{
     width: 100%;
 }
+/* making the image to full size but always there is a default size that can be found by the provided resources by default images are inline element so this have a weird padding in the bottom this can be modified by changing the property to
+display to block globally set the images to block // the parent div to grid or flex so that it makes the images property to block by adding the propertiers of height  and width as inline as a temporary fix but it wont be as a good as it alligns differently
+can be done adding width to 100% and height to auto so that the grid can align the pictures accordingly by object fit:cover but need to crop it to according size  */
 /* background color divs */
 .section-plum{
     background-color: var(--plum);
@@ -48,6 +58,7 @@ img{
     background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
     height: 2px;
 }
+/* created a div and filled with the linear gradient and given it a  height so that it can be used at multiple places  */
 .section-dkblue{
     background-color: var(--dkblue);
 }
@@ -105,6 +116,7 @@ nav h1[class*="fa-"]{
     font-size: 200%;
     color: var(--aqua);
 }
+/* a specific way for selecting classes which starts with the class name fa */
 nav a {
 color: var(--white);
 text-decoration: none;

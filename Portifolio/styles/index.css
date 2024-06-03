@@ -1,11 +1,12 @@
 @import url("./base.css");
-.main{
+.main , .Aboutme{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "text image";
+    grid-column-gap: 30px;
     padding:0 60px;
 }
-.main--text{
+.main--text,.About--text{
     grid-area: text;
     vertical-align: middle;
     text-align: center;
@@ -14,8 +15,9 @@
     align-items: center ;
     flex-direction: column;
 }
-.main--image{
+.main--image,.About--image{
     grid-area: image;
+    object-fit: cover;
 }
 .fon{
     font-family: var(--font-family-index);
@@ -43,4 +45,32 @@
     align-items: center;
     justify-content: center;
     padding: 15px;
+}
+
+.MySkills--container:hover{
+    background-color: var(--primary-color-text);
+    color: var(--secondary-color-bg);
+    .MySkills--container d svg{
+        fill: var(--Nutral);
+         }
+}
+.Myexperience{
+    background-color: var(--primary-color-text);
+    color: var(--secondary-color-bg);
+    padding: 0 60px;
+}
+.Experience--box{
+    border: 1px solid var(--Nutral);
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+}
+.Experience--box:nth-child(3n){
+background-color: var(--Nutral);
+}
+.Experience--box:last-child{
+margin-bottom: 15px;
 }
