@@ -33,18 +33,12 @@
         </ul>
       </nav>
       <button class="button">
-        Resume
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-          fill="#ffffff"
-        >
-          <path
-            d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
-          />
-        </svg>
+        <a href="./files/ManiKumarChintala.pdf" target="_blank"
+          >Resume
+          <img
+            src="./assets/svg/download_24dp_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+        /></a>
       </button>
     </header>
     <main class="main">
@@ -240,13 +234,22 @@
       </div>
     </section>
     <section id="ContactMe" class="ContactMe">
-      <div class="Contactme--form">
-        <form action="">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Subject" />
-          <input type="textbox" placeholder="Message" />
-          <button>Submit</button>
+      <div class="form-container">
+        <form class="contact-form">
+          <input type="text" id="name" placeholder="Name" />
+          <br />
+          <input type="Email" id="email" placeholder="Email" />
+          <br />
+          <input type="text" id="subject" placeholder="Subject" />
+          <br />
+          <textarea
+            id="message"
+            placeholder="Message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <input type="submit" class="submit" value="Send Message" />
         </form>
       </div>
       <div class="contactme--text">
@@ -262,5 +265,6 @@
       <p>@ 2024</p>
       <p>Made with Html Css and Js and Node,Express,Aws</p>
     </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
