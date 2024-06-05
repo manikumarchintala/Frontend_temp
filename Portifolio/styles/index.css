@@ -1,12 +1,12 @@
 @import url("./base.css");
-.main , .Aboutme{
+.main , .Aboutme ,.projects,.ContactMe{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "text image";
     grid-column-gap: 30px;
     padding:0 60px;
 }
-.main--text,.About--text{
+.main--text,.About--text,.project--text,.contactme--text{
     grid-area: text;
     vertical-align: middle;
     text-align: center;
@@ -15,14 +15,14 @@
     align-items: center ;
     flex-direction: column;
 }
-.main--image,.About--image{
+.main--image,.About--image,.contactme--form{
     grid-area: image;
-    object-fit: cover;
+    object-fit: contain;
 }
 .fon{
     font-family: var(--font-family-index);
 }
-.MySkills{
+.MySkills,.Myprojects {
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -31,7 +31,6 @@
 }
 .MySkills--grid{
     display: grid;
-   
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 100px;
@@ -50,9 +49,6 @@
 .MySkills--container:hover{
     background-color: var(--primary-color-text);
     color: var(--secondary-color-bg);
-    .MySkills--container d svg{
-        fill: var(--Nutral);
-         }
 }
 .Myexperience{
     background-color: var(--primary-color-text);
@@ -73,4 +69,8 @@ background-color: var(--Nutral);
 }
 .Experience--box:last-child{
 margin-bottom: 15px;
+}
+.Myprojects{
+    background-color: var(--primary-color-text);
+    color: var(--secondary-color-bg);
 }
