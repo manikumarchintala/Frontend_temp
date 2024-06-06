@@ -4,6 +4,7 @@
     --font-family: "Poetsen One", sans-serif;
     --font-family-index: "Bungee Shade", sans-serif;
     --Nutral:#404040;
+    --font-pargraph:12px;
 }
 body{
     background-color: var(--secondary-color-bg);
@@ -16,11 +17,6 @@ a{
     text-decoration: none;
     color: inherit;
 }
-/* img{
-    display: block;
-    width: 100%;
-    height: auto;
-} */
  p,h2{
     margin: 0;
     padding: 0;
@@ -36,6 +32,10 @@ a{
     grid-template-areas: "logo name nav button";
     align-items: center;
     padding: 0 60px;
+}
+.fon{
+    font-family: var(--font-family-index);
+    font-size: 30px;
 }
 .nav__list{
     list-style: none;
@@ -55,19 +55,30 @@ a{
     font-size: 15px;
     font-weight: bold;
 }
-.button{
+.button,.submit{
     grid-area: button;
-    margin-inline-end: 20px;
+    margin-inline-end: 5px;
     background-color: var(--primary-color-text);
     color: var(--secondary-color-bg);
-    padding-bottom: 3px;
     font-size: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
     border-radius: 5px;
+    padding: 4px;
 }
+.small{
+    font-size: var(--font-pargraph);
+    line-height: 1.5;
+    color: var(--Nutral);
+}
+.contrast{
+    color: var(--secondary-color-bg);
+    line-height: 1.5;
+    font-size: var(--font-pargraph);
+}
+
 .footer{
     display: grid;
     grid-template-columns: 50px 1fr ;

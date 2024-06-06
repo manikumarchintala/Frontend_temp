@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-family:"Noto Sans", sans-serif; ;
+    
+}
+.calculator{
+width: 30%;
+height: 40%;
+display: flex;
+flex-direction: column;
+}
+.screen{
+    height: 20%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+   flex-direction: row-reverse;
+   justify-content: flex-start;
+   align-items: center;
+}
+.screen span{
+    background-color: black;
+    color: white;
+    width: 100%; 
+    height: 20%;
+}
+.nut{
+    display: grid;
+    background-color: black;
+    /* grid-template-rows: repeat(6,1fr ) ; */
+    /* grid-template-columns:repeat(4,1fr);  */
+    gap: 0.1rem;
+    grid-template-areas:
+     "a a b c"
+     "z z z g"
+     "z z z k"
+     "z z z o"
+     "z z z q";
+}
+.val{
+    grid-area: z;
+    display: grid;
+    grid-template-areas:
+    "d e f"
+    "h i j"
+    "l m n"
+    "p p p ";
+}
+button{
+    height: 5rem;
+    max-width: 100%;
+    font: 1em "Noto Sans";
+    cursor: pointer;
+}
+button:nth-child(1){
+max-width: 100%;
+}
+button:nth-child(16){
+    max-width: 100%;
+    }
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+}
+.c{
+    grid-area: c;
+    background-color: orange;
+}
+.c:hover{
+    background-color:rgb(213, 171, 144);
+}
+.d{
+    grid-area: d;
+}
+
+.e{
+    grid-area: e;
+}
+.f{
+    grid-area: f;
+}
+.g{
+    grid-area: g;
+    background-color: orange;
+}
+.g:hover{
+    background-color:rgb(213, 171, 144);
+}
+.h{
+    grid-area: h;
+}
+.i{
+    grid-area: i;
+}
+.j{
+    grid-area: j;
+}
+.k{
+    grid-area: k;
+    background-color: orange;
+}
+.k:hover{
+    background-color: rgb(213, 171, 144);
+}
+.l{
+    grid-area: l;
+}
+
+.m{
+    grid-area: m;
+}
+.n{
+    grid-area: n;
+}
+.o{
+    grid-area: o;
+    background-color: orange;
+}
+.o:hover{
+    background-color: rgb(213, 171, 144);
+}
+.p{
+    grid-area: p;
+}
+.q{
+    grid-area: q;
+    background-color: orange;
+}
+.q:hover{
+    background-color: rgb(213, 171, 144);
+}
+
+

@@ -4,7 +4,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "text image";
     grid-column-gap: 30px;
-    padding:0 60px;
+    padding:5px 60px;
 }
 .main--text,.About--text,.project--text,.contactme--text{
     grid-area: text;
@@ -19,15 +19,13 @@
     grid-area: image;
     object-fit: contain;
 }
-.fon{
-    font-family: var(--font-family-index);
-}
+
 .MySkills,.Myprojects {
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- padding: 0 60px;
+ padding: 5px 60px;
 }
 .MySkills--grid{
     display: grid;
@@ -47,13 +45,13 @@
 }
 
 .MySkills--container:hover{
-    background-color: var(--primary-color-text);
+    background-color: var(--Nutral);
     color: var(--secondary-color-bg);
 }
 .Myexperience{
     background-color: var(--primary-color-text);
     color: var(--secondary-color-bg);
-    padding: 0 60px;
+    padding: 10px 60px;
 }
 .Experience--box{
     border: 1px solid var(--Nutral);
@@ -63,6 +61,15 @@
     flex-direction: column;
     box-sizing: content-box;
     flex-wrap: wrap;
+    padding: 15px 40px ;
+    row-gap: 20px;
+} 
+.Experience--box img{
+    width: 8%;
+    padding: 5px;
+}
+.Experience--box img:nth-child(3n){
+    width: 5%;
 }
 .Experience--box:nth-child(3n){
 background-color: var(--Nutral);
@@ -70,7 +77,38 @@ background-color: var(--Nutral);
 .Experience--box:last-child{
 margin-bottom: 15px;
 }
+.Experience--box__text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 .Myprojects{
     background-color: var(--primary-color-text);
     color: var(--secondary-color-bg);
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px ;
+}
+input{
+    width: 80%;
+    height: 35px;
+    border: 1.5px solid var(--primary-color-text);
+    border-radius: 4px;
+}
+.submit{
+    height: 40px;
+    border-radius: 5px;
+    padding: 4px;
+    width: 20%;
+}
+textarea{
+    width: 80%;
+    resize: none;
+    border: 1.5px solid var(--primary-color-text);
+    border-radius: 4px;
 }

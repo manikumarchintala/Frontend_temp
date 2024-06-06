@@ -1,0 +1,27 @@
+1)i'm currently working as a frontend developer at intoto technologies in a contract position.
+as my contract is about to finish i'm looking for new jobs in the market.
+2)i've been always fond of technologies as a kid.but when i was doing my bacholers ive this 
+web technologies as a subject optional which ive enrolled in that's the introduction to web technologies
+from then on i've been working for the web development.
+3)So lets think the client side rendered page as a Human body . the base i.e skeleton is HTML hyper text Markup
+Language it defines the structure of the page.  Css cascading style sheets is the layer that helps the markup looks 
+in an attractive way similar to skin in a human body.The functionality of the page such as input feild validations or 
+the css and html attributes can be controlled by the javaScript similar to Nervous system.
+4)1/4 adults or 25 percent of the people who uses internet in united states have somekind of Disablity.so the main use of internet
+is accesbility.so to make sure everyone can use it whenever a page is built the markup itself i.e let's say a button people just use 
+a div with a name as a button which can be read by screen readers so this might be the problem to the people who are using screenreaders.
+and by the following the ARIA Accessible Rich Internet Applications let's suppose we have a modern website which have a hamburger menu with responsive design 
+for screens if ARIA rule.
+5)these are the http methods can be used in RESTful Api's. GET,POST,PUT,DELETE.
+GET is used to retrive  data from the server.which can either be a resource or server.
+POST is used to send data to server to create a new resource,
+6)the first thing i would like to do is create the img tags in the markup itself if its the main content and ensure that we use scalable vector graphics
+(svg)so that the image file woudnt be that big of sizes.and once the page is loaded the broswer caches the data saves it in cache from that instasnt the browser can
+reload fast from the next time.
+7)by using Stick to standard and modern HTML and CSS features that are widely supported across modern browsers. Use standard JavaScript (ES6+) and avoid browser-specific features.
+ Use media queries to ensure your design works on different screen sizes and resolutions.flexible grid systems and relative units (e.g., percentages, ems, rems) instead of fixed units.
+ Use a CSS reset stylesheet (e.g., Eric Meyer’s Reset CSS) to remove default browser styling.Regularly test your site in the major browsers: Chrome, Firefox, Safari, Edge, and Internet Explorer.
+ Frameworks like React, Angular, and Vue have their mechanisms to deal with browser inconsistencies.
+ 8)Validate all user inputs on both client-side and server-side to ensure they meet expected formats, lengths, and types. Enforce strong password policies, including complexity requirements and regular password changes.
+ Maintain detailed logs of user activity, including login attempts, data access, and changes.Use HTTPS to encrypt data transmitted between the client and server, preventing eavesdropping and man-in-the-middle attacks.
+ 9)    
