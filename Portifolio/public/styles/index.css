@@ -35,6 +35,9 @@
     grid-row-gap: 50px;
     padding-bottom: 20px;
 }
+.main--text,.About--text{
+   row-gap: 10px;
+}
 .MySkills--container{
     display: flex;
     flex-direction: column;
@@ -52,6 +55,7 @@
     background-color: var(--primary-color-text);
     color: var(--secondary-color-bg);
     padding: 10px 60px;
+    text-align: center;
 }
 .Experience--box{
     border: 1px solid var(--Nutral);
