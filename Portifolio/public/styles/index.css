@@ -63,7 +63,7 @@
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    box-sizing: content-box;
+    box-sizing: padding-box;      
     flex-wrap: wrap;
     padding: 15px 40px ;
     row-gap: 20px;
@@ -85,7 +85,6 @@ margin-bottom: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 .Myprojects{
     background-color: var(--primary-color-text);
