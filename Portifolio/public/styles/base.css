@@ -28,8 +28,8 @@ a{
 }
 .header{
     display: grid;
-    grid-template-columns: 100px 1fr 2fr 150px;
-    grid-template-areas: "logo name nav button";
+    grid-template-columns:  1fr 2fr 150px;
+    grid-template-areas: " name nav button";
     align-items: center;
     padding: 0 60px;
 }
