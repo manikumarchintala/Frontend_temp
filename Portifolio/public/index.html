@@ -9,7 +9,7 @@
     sizes="32x32"
     href="./assets/Images/alphabet-m-icon.svg"
   />
-    <title>Mani Chintala</title>
+    <title>Mani</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,10 +23,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/index.css" />
+    <script src="scripts/main.js" defer></script>
   </head>
-  <body>
+  <body class="body body--primary home" >
     <header class="header">
-      <a class="header__link" href="./index.html">Mani Chintala</a>
+  
+      <a class="header__link" href="./index.html">Mani</a>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item"><a href="./about.html"> About Me</a></li>
@@ -38,11 +40,27 @@
       <button class="button">
         <a href="./files/ManiKumarChintala.pdf" target="_blank"
           >Resume
-          <img
-            src="./assets/svg/download_24dp_FILL0_wght400_GRAD0_opsz24.svg"
-            alt=""
-        /></a>
+        </a>
       </button>
+      <div class="svgholder">
+      <svg class="menu" width="33" height="36" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M0 4.5C0 3.67031 0.670312 3 1.5 3H19.5C20.3297 3 21 3.67031 21 4.5C21 5.32969 20.3297 6 19.5 6H1.5C0.670312 6 0 5.32969 0 4.5ZM0 12C0 11.1703 0.670312 10.5 1.5 10.5H19.5C20.3297 10.5 21 11.1703 21 12C21 12.8297 20.3297 13.5 19.5 13.5H1.5C0.670312 13.5 0 12.8297 0 12ZM21 19.5C21 20.3297 20.3297 21 19.5 21H1.5C0.670312 21 0 20.3297 0 19.5C0 18.6703 0.670312 18 1.5 18H19.5C20.3297 18 21 18.6703 21 19.5Z"
+            fill="#000000" />
+    </svg>
+    <svg class="close" width="33" height="36" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_2_236)">
+            <path
+                d="M18.2424 3.79587C18.7897 3.18493 18.7025 2.27751 18.0438 1.76989C17.385 1.26227 16.4065 1.34313 15.8591 1.95407L9.30048 9.25387L2.74181 1.95407C2.19445 1.34313 1.21598 1.26227 0.557204 1.76989C-0.101569 2.27751 -0.188759 3.18493 0.358604 3.79587L7.28056 11.5L0.358604 19.2041C-0.188759 19.815 -0.101569 20.7224 0.557204 21.23C1.21598 21.7377 2.19445 21.6568 2.74181 21.0459L9.30048 13.7461L15.8591 21.0459C16.4065 21.6568 17.385 21.7377 18.0438 21.23C18.7025 20.7224 18.7897 19.815 18.2424 19.2041L11.3204 11.5L18.2424 3.79587Z"
+                fill="#000000" />
+        </g>
+        <defs>
+            <clipPath id="clip0_2_236">
+                <rect width="18.6006" height="23" fill="white" />
+            </clipPath>
+        </defs>
+    </svg>
+  </div>
     </header>
     <main class="main">
       <div class="main--text">
@@ -93,35 +111,35 @@
       <div class="MySkills--grid">
         <div class="MySkills--container">
           <img src="./assets/svg/icon-javscript.svg" alt="js" />
-          <span>Java Script</span>
+          <!-- <span>Java Script</span> -->
         </div>
         <div class="MySkills--container">
           <img src="./assets/svg/icon-react.svg" alt="Express" />
-          <span>React.Js</span>
+          <!-- <span>React.Js</span> -->
         </div>
         <div class="MySkills--container">
           <img src="./assets/svg/icon-typescript.svg" alt="TypeScript" />
-          <span>TypeScript</span>
+          <!-- <span>TypeScript</span> -->
         </div>
         <div class="MySkills--container">
           <img src="./assets/svg/icon-sass.svg" alt="sass" />
-          <span>SaSS</span>
+          <!-- <span>SaSS</span> -->
         </div>
         <div class="MySkills--container">
           <img src="./assets/svg/icon-nextjs.svg" alt="Next" />
-          <span>Next.Js</span>
+          <!-- <span>Next.Js</span> -->
         </div>
         <div class="MySkills--container">
           <img src="./assets/svg/icon-git.svg" alt="Git" />
-          <span>Git</span>
+          <!-- <span>Git</span> -->
         </div>
         <div class="MySkills--container">
           <img src="./assets/svg/icon-express.svg" alt="Express" />
-          <span>Express.js</span>
+          <!-- <span>Express.js</span> -->
         </div>
         <div class="MySkills--container">
           <img src="./assets/svg/icon-mongodb.svg" alt="MongoDb" />
-          <span>Mongo Db</span>
+          <!-- <span>Mongo Db</span> -->
         </div>
       </div>
     </section>
@@ -281,12 +299,16 @@
     <section id="ContactMe" class="ContactMe">
       <div class="form-container">
         <form class="contact-form">
+          <span class="warning--name">Please enter your name</span>
           <input type="text" class="contact--form__name" id="name" placeholder="Name" />
           <br />
-          <input type="Email" class="contact--form__email" id="email" placeholder="Email" />
+          <span class="warning--email">enter a valid email</span>
+          <input type="text" class="contact--form__email" id="email" placeholder="Email" />
           <br />
+          <span class="warning--subject">please enter text</span>
           <input type="text" class="contact--form__subject" id="subject" placeholder="Subject" />
           <br />
+          <span class="warning--text">please enter message</span>
           <textarea
             id="message"
             class="contact--form__text"
@@ -304,7 +326,7 @@
         <p class="small">
           I am always eager to take on new challenges and collaborate with others who are passionate about technology and design. Feel free to explore my portfolio and reach out to me if you have any questions or opportunities to discuss. 
           <h5>manikumarchintala@gmail.com</h5>
-          <h4>+1 3465084368</h4>
+          <h4>3465084368</h4>
         </p>
       </div>
     </section>
@@ -313,9 +335,8 @@
         <img src="./assets/svg/logoback.svg" alt="logoback" />
       </a>
       <a class="header--link" href="./index.html">Mani Chintala</a>
-      <p>@ 2024</p>
-      <p>Made with Html Css and Js and Node,Express,Aws</p>
+      <p>@2024 by Mani</p>
     </footer>
-    <script src="scripts/main.js"></script>
+   
   </body>
 </html>

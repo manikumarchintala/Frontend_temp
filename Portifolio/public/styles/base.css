@@ -73,12 +73,8 @@ a{
     background-color: var(--primary-color-text);
     color: var(--secondary-color-bg);
     font-size: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
+    height: 35px;
     border-radius: 5px;
-    padding: 4px;
 }
 .small{
     font-size: var(--font-pargraph);
@@ -99,4 +95,72 @@ a{
     padding: 0 60px;
     background-color: var(--primary-color-text);
     color: var(--secondary-color-bg);   
+}
+/* hamburger */
+.menu{
+    display: none;
+    cursor: pointer;
+}
+.close{
+    display: none;
+    cursor: pointer;
+}
+/* media queries */
+@media (max-width:870px){
+    .menu{
+        display: block;
+    }
+    .menu--hide{
+        display: none;
+    }
+    .close--show{
+        display: block;
+    }
+    .header{
+        padding: 0 10px;
+    }
+    .nav {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--secondary-color-bg);
+        top: 55px;
+        right: -100%;
+        padding-top: 60px;
+        transition: right 0.2s linear;
+        order: 2;
+    }
+    .nav--visible{
+        right: 0;
+    }
+    .nav__list{
+        flex-direction: column;
+        justify-content:flex-start;
+        height: 80%;
+    }
+    .nav__list-item{
+        font-size: 40px;
+        padding-bottom: 20px;
+        font-weight: bold;
+    }
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 33px;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: "logo button ham";
+    }
+    .header__link{
+        order: 1;
+        grid-area: logo;
+    }
+
+    .svgholder{
+        order: 3;
+        grid-area: ham;
+    }
+    .body--no-scroll{
+        overflow: hidden;
+    }
 }

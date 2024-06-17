@@ -14,10 +14,12 @@
     justify-content: center;
     align-items: center ;
     flex-direction: column;
+    order: 2;
 }
 .main--image,.About--image,.contactme--form{
     grid-area: image;
     object-fit: contain;
+    order: 1;
 }
 
 .MySkills,.Myprojects {
@@ -29,11 +31,11 @@
 }
 .MySkills--grid{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 100px;
+    grid-column-gap: 80px;
     grid-row-gap: 50px;
-    padding-bottom: 20px;
+    padding: 30px 0px;
 }
 .main--text,.About--text{
    row-gap: 10px;
@@ -41,6 +43,7 @@
 .MySkills--container{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     border: 2px solid var(--primary-color-text);
     align-items: center;
     justify-content: center;
@@ -70,7 +73,7 @@
 } 
 .Experience--box img{
     width: 8%;
-    padding: 5px;
+    padding: 5px 0px;
 }
 .Experience--box img:nth-child(3n){
     width: 5%;
@@ -114,4 +117,39 @@ textarea{
     resize: none;
     border: 1.5px solid var(--primary-color-text);
     border-radius: 4px;
+}
+@media (max-width:870px){
+  
+    .main , .Aboutme ,.projects,.ContactMe{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: "image"
+                              "text";
+        grid-column-gap: 30px;
+        padding:5px 10px;
+    }
+    .MySkills{
+        padding: 5px 10px;
+    }
+    .MySkills--grid{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        /* grid-template-rows: repeat(2, 1fr); */
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        padding: 30px 0px;
+    }
+    .Myexperience,.Myprojects{
+        padding: 15px 10px;
+    }
+    .contact-form{
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    [class^="warning"]{
+        font-size: 10px;
+        color: red;
+    }
+
 }
