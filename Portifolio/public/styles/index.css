@@ -147,6 +147,9 @@ textarea{
         margin-top: 30px;
         padding: 0 10px;
     }
+    .submit{
+        width: 40%;
+    }
     .footer{
         padding: 0 10px;
     }
