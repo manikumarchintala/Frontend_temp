@@ -129,8 +129,10 @@ a{
         padding-top: 60px;
         transition: right 0.2s linear;
         order: 2;
+        display: none;
     }
     .nav--visible{
+        display: block;
         right: 0;
     }
     .nav__list{
