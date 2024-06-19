@@ -35,19 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const isValidEmail = validateEmail(email.value);
-    if (!isValidEmail) {
-      warningEmail.innerText = "* please enter a valid email!!";
-    } else {
-      warningEmail.innerText = "";
-    }
-    if (
-      name.value &&
-      isValidEmail &&
-      subject.value &&
-      message.value &&
-      wrong()
-    ) {
+    if (name.value && email.value && subject.value && message.value) {
       let formData = {
         name: name.value,
         email: email.value,
