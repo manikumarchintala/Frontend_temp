@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://anjana.dev/vanilla-js-projects/clock/index.html -->
+<html data-theme="dark">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://anjana.dev/vanilla-js-projects/favicon.svg"
+    />
+
+    <title>Random Clock | Vanilla JS Projects</title>
+    <style>
+      #clock {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+      }
+
+      #clock p {
+        width: 200px;
+        position: relative;
+        left: 20px;
+        top: 30px;
+        font-size: xx-large;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="./Random Clock _ Vanilla JS Projects_files/pico.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin=""
+      href="./Random Clock _ Vanilla JS Projects_files/spacing.css"
+    />
+  </head>
+
+  <body class="container">
+    <header>
+      <h1>random clock</h1>
+    </header>
+
+    <main class="container">
+      <article>
+        <div id="clock">
+          <p id="time"></p>
+        </div>
+      </article>
+    </main>
+
+    <script id="clock.js">
+      (function better() {
+        let view = document.getElementById("time");
+        let block = document.getElementById("clock");
+        block.style.top = 400 * Math.random() + "px";
+        block.style.left = 400 * Math.random() + "px";
+        let today = new Date();
+        var time =
+          today.getHours() +
+          ":" +
+          today.getMinutes() +
+          ":" +
+          today.getSeconds();
+        view.innerText = time;
+        setTimeout(better, 1000);
+      })();
+    </script>
+  </body>
+</html>
