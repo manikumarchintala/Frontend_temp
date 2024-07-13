@@ -1,3 +1,3 @@
-Creating pages for the challenges  in the Frontend mentor 
-Type of challanges: newbee to junior till now 😄 
-Dom manupulation for basic changes are made and functionalty added to each of the pages which are responsive.
+# Creating Basic Web Pages for Practice in few concepts for the Css Madness.
+all of the files are created to immitate the designs of the frontend mentors.
+This is like a practice books.
